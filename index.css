@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.container {
+  margin: auto;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 350px;
+}
+.container--img {
+  text-align: center;
+}
+.container--img img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.person--name {
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+.person--city {
+  color: hsl(75, 94%, 57%);
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.socials {
+  font-weight: 600;
+  background-color: hsl(0, 0%, 20%);
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.socials:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 75%;
+    padding: 20px;
+  }
+  .person--name {
+    font-size: 1.65rem;
+  }
+  .person--city {
+    font-size: 0.9rem;
+  }
+  .bio {
+    font-size: 0.9rem;
+  }
+  .socials {
+    font-size: 0.9rem;
+  }
+  .container--img img {
+    width: 6rem;
+  }
+}
